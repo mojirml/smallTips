@@ -1,1 +1,10 @@
+刷屏弹幕
 
+var event = document.createEvent('Event');
+event.initEvent('input', true, true);
+function fun123(){ 
+  $('.chat-input.border-box').val("前方高能！！"); 	
+  $('.chat-input.border-box')[0].dispatchEvent(event); 
+  $('.bl-button.live-skin-highlight-button-bg.bl-button--primary.bl-button--small').click(); 
+} 
+setInterval("fun123()","100");
